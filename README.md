@@ -24,7 +24,8 @@
 
 #### Vídeo demonstrativo
 
-[Assista ao Vídeo](public/website_energia.mp4);
+[![Miniatura do Vídeo](public/main1.jpg)](public/website_energia.mp4)
+
 
 ### Footer
 
