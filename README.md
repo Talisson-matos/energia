@@ -6,9 +6,13 @@
 ### Header
 
 ○ Possui um Header(cabeçalho) com âncoras para redirecionar para as respectivas páginas nomeadas;
+
 ○ Botão de alternancia de tema claro/escuro;
+
 ○ Input para o usuário pesquisar (API Google) sobre temas de interesse;
+
 ○ Breadcrump para informar usuário de sua localização no site;
+
 ○ Header responsivo com efeito de Hide-on-Scroll Header (Aparece/desaparece dependendo do scroll da página)
 
 ![Layout do Header](public/header.jpg)
@@ -16,7 +20,9 @@
 ### Main
 
 ○ Texto informativo redirecionado por âncoras do header;
+
 ○ Responsivo para todos os tipos de telas;
+
 ○ Informativo, abordando de maneira relevante todos os principais conceitos;
 
 #### Corpo de página 1
