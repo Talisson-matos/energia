@@ -1,13 +1,14 @@
 
 import ReactMarkdown from 'react-markdown';
 import '../styles/layout/Main.scss';
+import lightningImage from '../assets/lightning-2702168_640.jpg';
 
 
 const EnergiaText = () => {
    const markdownContent = `
 # Energia
 
- ![Usina nuclear em funcionamento](src/assets/lightning-2702168_640.jpg)
+ ![Usina nuclear em funcionamento](${lightningImage})
 
  ## Definição Cientifica
 

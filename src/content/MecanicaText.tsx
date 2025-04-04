@@ -1,12 +1,13 @@
 
 import ReactMarkdown from 'react-markdown';
 import '../styles/layout/Main.scss';
+import crane from '../assets/crane-3109757_640.jpg';
 
 const MecanicaText = () => {
    const markdownContent = `
    # Energia Mecânica
 
-   ![Usina nuclear em funcionamento](src/assets/crane-3109757_640.jpg)
+   ![Usina nuclear em funcionamento](${crane})
 
    ## Definição Científica
 

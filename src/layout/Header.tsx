@@ -8,24 +8,49 @@ import { FaSun, FaMoon, FaAlignJustify, FaTimes } from "react-icons/fa";
 
 const Header: React.FC = () => {
 
+    // refresh página
+
+    useEffect(() => {
+        const detectManualRefresh = () => {
+          if (window.performance) {
+            const navigation = performance.getEntriesByType('navigation');
+            if (navigation.length > 0 && (navigation[0] as PerformanceNavigationTiming).type === 'reload') {
+              return true;
+            }
+            // Fallback para navegadores antigos
+            if (performance.navigation && performance.navigation.type === 1) {
+              return true;
+            }
+          }
+          return false;
+        };
+    
+        const isManualRefresh = detectManualRefresh();
+        if (isManualRefresh && window.location.pathname !== '/') {
+          console.log('Refresh manual detectado. Redirecionando para a raiz.');
+          window.location.href = '/';
+        }
+      }, []);
+
     // input search 
 
     const [query, setQuery] = useState('');
 
-  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (query.trim() !== '') {
-      // Redireciona para o Google
-      window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
-    }
-  };
+    const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        if (query.trim() !== '') {
+            // Redireciona para o Google
+            window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+        }
+        setQuery('');
+    };
 
-const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      e.preventDefault(); 
-      handleSearch(e as unknown as React.FormEvent<HTMLFormElement>); 
-    }
-  };
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            handleSearch(e as unknown as React.FormEvent<HTMLFormElement>);
+        }
+    };
 
 
     // Scrool header
@@ -93,6 +118,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     const [activeLink, setActiveLink] = useState(location.pathname);
 
     useEffect(() => {
+        console.log("Atualizando activeLink:", location.pathname);
         setActiveLink(location.pathname)
     }, [location.pathname])
 
@@ -138,13 +164,13 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
                         {theme === 'light' ? <FaSun /> : <FaMoon />}
                     </button>
 
-                    <Input 
-                    placeholder={'Para mais informações... '}
-                    onsubmit={handleSearch}
-                    onkeydown={handleKeyDown}
-                    value={query}
-                    onchange={(e) => setQuery(e.target.value)}
-                    type='text' />
+                    <Input
+                        placeholder={'Para mais informações... '}
+                        onsubmit={handleSearch}
+                        onkeydown={handleKeyDown}
+                        value={query}
+                        onchange={(e) => setQuery(e.target.value)}
+                        type='text' />
 
                 </div>
 

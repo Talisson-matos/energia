@@ -1,13 +1,14 @@
 
 import ReactMarkdown from 'react-markdown';
 import '../styles/layout/Main.scss';
+import dna from '../assets/dna-163710_640.jpg';
 
 
 const QuimicaText = () => {
    const markdownContent = `
   # Energia Química
 
-  ![Usina nuclear em funcionamento](src/assets/dna-163710_640.jpg)
+  ![Usina nuclear em funcionamento](${dna})
 
   ## Definição Científica
 

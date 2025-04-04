@@ -1,13 +1,14 @@
 
 import ReactMarkdown from 'react-markdown';
 import '../styles/layout/Main.scss';
+import vitrola from '../assets/vitrola-810479_640.jpg';
 
 
 const AcusticaText = () => {
   const markdownContent = `
 # Energia Acústica 
 
-![Usina nuclear em funcionamento](src/assets/vitrola-810479_640.jpg)
+![Usina nuclear em funcionamento](${vitrola})
 
 
 ## Definição Científica

@@ -8,7 +8,7 @@ import Main from '../layout/Main';
 const Energia = () => {
 
     return (
-        <>            
+        <>           
                 <Header />
                 <Main />
                 <Footer />           

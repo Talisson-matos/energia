@@ -1,12 +1,14 @@
 
 import ReactMarkdown from 'react-markdown';
 import '../styles/layout/Main.scss';
+import luz from '../assets/light-5083606_640.jpg';
+
 const OpticaText = () => {
   const markdownContent = `
   
   # Energia Óptica
 
-  ![Usina nuclear em funcionamento](src/assets/light-5083606_640.jpg)
+  ![Usina nuclear em funcionamento](${luz})
 
   ## Definição Científica
 

@@ -3,7 +3,7 @@ import DefinicaoCientifica from '../components/main/DefinicaoCientifica';
 const Main = () => {
   return (
     <div >       
-      <DefinicaoCientifica />            
+      <DefinicaoCientifica key={location.pathname}/>            
     </div>
   )
 }

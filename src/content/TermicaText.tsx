@@ -1,6 +1,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import '../styles/layout/Main.scss';
+import fire from '../assets/fire-171229_640.jpg';
 
 
 const TermicaText = () => {
@@ -8,7 +9,7 @@ const TermicaText = () => {
   const markdownContent = `
   # Energia Térmica
 
-  ![Fogo incandescente representando energia termica](src/assets/fire-171229_640.jpg)
+  ![Fogo incandescente representando energia termica](${fire})
 
 ## Definição Científica  
 
@@ -18,9 +19,13 @@ A energia térmica é a soma da energia interna de um sistema, resultante do mov
 A energia interna é expressa por:  
 𝑈 = 3/2 𝑛𝑅𝑇  
 Onde:  
+
 - 𝑈: energia interna (Joules)  
+
 - 𝑛: número de mols  
+
 - 𝑅: constante dos gases  
+
 - 𝑇: temperatura absoluta (Kelvin).  
 
 
