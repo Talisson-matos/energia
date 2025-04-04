@@ -11,7 +11,7 @@
 
 ○ Input para o usuário pesquisar (API Google) sobre temas de interesse;
 
-○ Breadcrump para informar usuário de sua localização no site;
+○ Breadcrumb para informar usuário de sua localização no site;
 
 ○ Header responsivo com efeito de Hide-on-Scroll Header (Aparece/desaparece dependendo do scroll da página)
 
