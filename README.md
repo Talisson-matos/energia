@@ -19,7 +19,11 @@
 ○ Responsivo para todos os tipos de telas;
 ○ Informativo, abordando de maneira relevante todos os principais conceitos;
 
+#### Corpo de página 1
+
 ![Layout do Main](public/main1.jpg)
+
+#### Corpo de página 2
 
 ![Layout do Main](public/main2.jpg)
 
