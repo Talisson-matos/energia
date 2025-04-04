@@ -20,6 +20,7 @@
 ○ Informativo, abordando de maneira relevante todos os principais conceitos;
 
 ![Layout do Main](public/main1.jpg)
+
 ![Layout do Main](public/main2.jpg)
 
 #### Vídeo demonstrativo
