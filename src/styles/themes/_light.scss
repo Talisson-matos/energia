@@ -1,0 +1,18 @@
+// variaveis claras
+
+@use '../utils/variables' as vars;
+
+[data-theme='light'] {
+    --header-bg: #{vars.$bg-light-color};
+    --header-text-color: #{vars.$text-light-color} ;    
+    --breadcrump-bg: #{vars.$second-light-color};
+
+    --main-bg: #{vars.$primary-light-color};
+    --main-text-color: #{vars.$text-light-color };
+    --main-text-color-2: #{ vars.$second-light-color};
+
+    --footer-bg: #{vars.$bg-light-color};
+    --footer-text-color: #{ vars.$text-light-color};
+  }
+  
+  

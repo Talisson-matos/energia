@@ -1,0 +1,51 @@
+@use '../themes/dark';
+@use '../themes/light';
+@use '../base/typography' as font ;
+
+
+
+.main-container{
+    font-family: font.$roboto;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 90%;
+    margin: 10rem auto 3rem ;
+    font-size: 1.1em;
+    background: var(--main-bg);
+    color: var(--main-text-color);
+
+   
+     
+    h1{
+        text-align: center;
+    }
+    h1,h2,h3,h4{
+        margin: 1rem 0;
+        color: var(--main-text-color);
+    }
+    h3,h4{
+        margin: .5rem 0;
+    }
+    p{
+        line-height: 1.6;  
+         
+    }
+    img{
+        margin: 1rem 0;
+        position: relative;
+       left: 50%;
+       transform: translateX(-50%);
+       border-radius: 12px;
+    }
+ }
+
+ @media (max-width:1000px){
+    .main-container{
+        margin-top: 12rem;
+    }
+ }
+ @media (max-width:768px){
+    .main-container{
+        margin-top: 14rem;
+    }
+ }

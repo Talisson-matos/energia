@@ -1,0 +1,36 @@
+@use '../themes/dark' ;
+@use '../themes/light' ;
+
+.input-group {
+    border: 1px solid var(--header-text-color);
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.input-area {
+    height: 100%;
+    width: 100%;
+    background-color: var(--header-bg);
+    color: var(--header-text-color);
+    font-size: 1.2em;
+    flex: 11;
+    border: none;
+    outline: none;    
+}
+
+.input-avatar {
+    font-size: 1.2rem;
+    border: 1px solid var(--header-text-color);
+    color: var(--header-text-color);
+    padding: 5px;
+    border-radius: 50%;   
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+

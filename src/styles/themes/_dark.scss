@@ -1,0 +1,22 @@
+// variaveis escuras
+
+@use '../utils/variables' as vars;
+
+[data-theme='dark'] {
+    --header-bg: #{vars.$bg-dark-color};
+    --header-text-color: #{ vars.$text-dark-color};
+    --breadcrump-bg: #{vars.$second-dark-color};
+
+    --main-bg: #{vars.$primary-dark-color};
+    --main-text-color: #{ vars.$text-dark-color};
+    --main-text-color-2: #{ vars.$second-dark-color};    
+
+    --footer-bg: #{vars.$bg-dark-color};
+    --footer-text-color: #{ vars.$text-dark-color};
+  }
+  
+  
+ 
+
+  
+

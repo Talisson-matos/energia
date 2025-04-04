@@ -1,0 +1,23 @@
+@use '../themes/dark';
+@use '../themes/light';
+@use '../base/typography' as font ;
+
+.footer-container{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--footer-bg) ;
+}
+
+.footer-content{
+    font-family: font.$poppins ;
+    color: var(--footer-text-color) ;
+    font-size: 1em ;
+}
+
+@media (max-width:768px){
+    footer{
+        padding: 1rem;
+    }
+}
